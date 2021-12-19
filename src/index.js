@@ -10,6 +10,23 @@ import ComponenteB from './ComponenteB';
 const element = 'Willian';
 const element2 = <h1>Olá Brasil</h1>
 
+const buttonA = <button>Histórico</button>
+const buttonB = <button>Saldo</button>
+const exibe = true;
+
+const App2 = () => {
+  return(
+    <div>
+      {exibe && (
+        
+        <div>{buttonA}</div>
+
+      )}
+    </div>
+  );
+};
+
+/*
 class App2 extends Component {
 
   constructor(props){
@@ -25,7 +42,7 @@ class App2 extends Component {
       this.setState({
         copo: 'suco'
       })
-    }, 3000)
+    },)
   }
 
   alterarCopo = () => {
@@ -46,7 +63,7 @@ class App2 extends Component {
     }
 
 }
-
+*/
 /*
 function soma(a,b) {
   alert(a+b)
