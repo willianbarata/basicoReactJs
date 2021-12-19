@@ -14,8 +14,46 @@ const buttonA = <button>Histórico</button>
 const buttonB = <button>Saldo</button>
 const exibe = false;
 
+const ListClientes = [
+  {
+    id: 1,
+    nome: 'Willian'
+  },
+  {
+    id: 2,
+    nome: 'Pedro'
+  },
+  {
+    id: 3,
+    nome: 'Maria'
+  },
+  {
+    id: 4,
+   nome: 'Julia'
+  }
+  ];
+
+  const App2 = () => {
+
+    const renderCustomers = (customer, index) => {
+      return (
+          <li>{customer.nome}</li>
+      )
+    }
+
+    return(
+       <div>
+          <ul>
+             {ListClientes.map(renderCustomers)}  
+          </ul>
+        
+      </div>
+    );
+  };
+
+
 //condição If com ternário ? :
-const App2 = () => {
+/* const App2 = () => {
   return(
     <div>
       {exibe ? (
@@ -28,6 +66,8 @@ const App2 = () => {
     </div>
   );
 };
+
+*/
 //condição &&
 /*
 const App2 = () => {
