@@ -33,11 +33,34 @@ const ListClientes = [
   }
   ];
 
+  const showEvent = (e) => {
+    console.log('evento clicado');
+    console.log(e);
+  }
+
+  const Button4 = <button onClick={showEvent}> Mostrar evento</button>
+
+const App2 = () => {
+
+  const handleChange = (e) => {
+    const { value } = e.target;
+    console.log(value);
+  }
+   return(
+    <div>
+      <input onChange={handleChange}/>
+      {Button4}
+
+    </div>
+   );
+}
+
+ /* 
   const App2 = () => {
 
     const renderCustomers = (customer, index) => {
       return (
-          <li>{customer.nome}</li>
+          <li key={index}> {customer.nome}</li>
       )
     }
 
@@ -51,7 +74,7 @@ const ListClientes = [
     );
   };
 
-
+*/
 //condição If com ternário ? :
 /* const App2 = () => {
   return(
