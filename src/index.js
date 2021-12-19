@@ -12,8 +12,24 @@ const element2 = <h1>Olá Brasil</h1>
 
 const buttonA = <button>Histórico</button>
 const buttonB = <button>Saldo</button>
-const exibe = true;
+const exibe = false;
 
+//condição If com ternário ? :
+const App2 = () => {
+  return(
+    <div>
+      {exibe ? (
+        
+        <div>{buttonA}</div>
+
+      ) : (
+        <div>{buttonB}</div>
+      )} 
+    </div>
+  );
+};
+//condição &&
+/*
 const App2 = () => {
   return(
     <div>
@@ -21,11 +37,11 @@ const App2 = () => {
         
         <div>{buttonA}</div>
 
-      )}
+      )} 
     </div>
   );
 };
-
+*/
 /*
 class App2 extends Component {
 
